@@ -1,0 +1,159 @@
+<html>
+	<head>
+		<title>Urban Dare Race Command</title>
+		<link rel="stylesheet" href="style/main.css" />
+	</head>
+	<body style="margin:0">
+		<div id="main_wrapper">
+			<div id="main_left" class="main_column droppedbox">
+				<div id="races" class="left_list">
+				    <div class="list_title">Races</div>
+				    <div class="ul_wrapper"><ul id="race_list"><li>item</li></ul></div>
+				    <div class="list_footer">
+				        <div id="raceNew" class="editButton button">New Race</div>
+				    </div>
+				</div>
+                <div id="teams" class="left_list hidden">
+                    <div class="list_title">Teams</div>
+                    <div class="ul_wrapper"><ul id="teams_list"><li>item</li></ul></div>
+                    <div class="list_footer">
+                        <div id="teamBack" class="editButton button">Back</div>
+                        <div id="teamNew" class="editButton button">New Team</div>
+                        <div id="teamImport" class="editButton button" style="display: none;">Import Teams</div>
+                        <div id="teamExport" class="editButton button" style="display: none;">Export Teams</div>
+                    </div>
+                </div>
+			</div>
+			<div id="main_right" class="main_column">
+				<div id="race_edit" class="droppedbox hidden">
+					<div class="editField">
+						<label for="raceDate">Race Date:</label>
+						<input type="text" name="raceDate">
+					</div>
+					<div class="editField">
+						<label for="raceLocation">Race Location:</label>
+						<input type="text" name="raceLocation">
+					</div>
+                    <div class="editField">
+                        <label>Bonuses:</label>
+                        <div id="raceBonusList"></div>
+                    </div>
+					<div class="editButtons">
+						<div id="raceSave" class="editButton button">Save</div>
+						<div id="raceReset" class="editButton button">Reset</div>
+                        <div id="raceAddBonus" class="editButton button"  style="display: none;">Add Bonus</div>
+                        <div id="raceStart" class="editButton button" style="display: none;">Start</div>
+                        <div id="raceOpen" class="editButton button" style="display: none;">Open</div>
+					</div>
+				</div>
+				<div id="race_start" class="droppedbox hidden">
+                    <div class="editField">
+                        <label for="raceStart">Race Start:</label>
+                        <input type="text" name="raceStart">
+                    </div>
+                    <div class="editButtons">
+                        <div id="raceStartSave" class="editButton button">Save</div>
+                        <div id="raceStartReset" class="editButton button">Reset</div>
+                    </div>				    
+				</div>
+                <div id="bonus_edit" class="droppedbox hidden">
+                    <div class="editField">
+                        <label for="bonusName">Name:</label>
+                        <input type="text" name="bonusName">
+                    </div>
+                    <div class="editField">
+                        <label for="bonusAmount">Amount:</label>
+                        <input type="text" name="bonusAmount">
+                    </div>
+                    <div class="editButtons">
+                        <div id="bonusSave" class="editButton button">Save</div>
+                        <div id="bonusReset" class="editButton button">Reset</div>
+                    </div>
+                </div>
+                <div id="team_edit" class="droppedbox hidden">
+                    <div class="editField">
+                        <label for="teamNumber">Team Number:</label>
+                        <input type="text" name="teamNumber">
+                    </div>
+                    <div class="editField">
+                        <label for="teamName">Team Name:</label>
+                        <input type="text" name="teamName">
+                    </div>
+                    <div class="editField">
+                        <label>Members:</label>
+                        <div id="teamMemberList"></div>
+                    </div>
+                    <div class="editField">
+                        <label>Bonuses:</label>
+                        <div id="teamBonusList"></div>
+                    </div>
+                    <div class="editButtons">
+                        <div id="teamAddMember" class="editButton button"  style="display: none;">Add Member</div>
+                        <div id="teamAddBonus" class="editButton button"  style="display: none;">Add Bonus</div>
+                        <div id="teamSave" class="editButton button">Save</div>
+                        <div id="teamReset" class="editButton button">Reset</div>
+                    </div>
+                </div>
+                <div id="team_bonus_edit" class="droppedbox hidden">
+                    <div class="editField">
+                        <label>Bonuses:</label>
+                        <div id="teamRaceBonusList"></div>
+                    </div>
+                    <div class="editButtons">
+                        <div id="teamBonusDone" class="editButton button">Done</div>
+                    </div>
+                </div>
+                <div id="member_edit" class="droppedbox hidden">
+                    <div class="editField">
+                        <label for="memberFirstName">First Name:</label>
+                        <input type="text" name="memberFirstName">
+                    </div>
+                    <div class="editField">
+                        <label for="memberLastName">Last Name:</label>
+                        <input type="text" name="memberLastName">
+                    </div>
+                    <div class="editField">
+                        <label for="memberEMail">EMail:</label>
+                        <input type="text" name="memberEMail">
+                    </div>
+                    <div class="editButtons">
+                        <div id="memberSave" class="editButton button">Save</div>
+                        <div id="memberReset" class="editButton button">Reset</div>
+                    </div>
+                </div>
+                <div id="team_finish" class="droppedbox hidden">
+                    <div class="editField">
+                        <label for="teamFinishNumber">Number:</label>
+                        <input type="text" name="teamFinishNumber">
+                    </div>
+                    <div class="editField">
+                        <label for="teamFinishTime">Time:</label>
+                        <input type="text" name="teamFinishTime">
+                    </div>
+                    <div class="editButtons">
+                        <div id="teamFinishSave" class="editButton button">Save</div>
+                        <div id="teamFinishReset" class="editButton button">Reset</div>
+                    </div>                                      
+                </div>
+			</div>
+		</div>
+        <script src="script/Vendors/lawnchair-0.6.1.min.js"></script>
+		<script src="script/Vendors/adaptors/lawnchair-adapter-webkit-sqlite-0.6.1.js"></script>
+		<script src="script/framework.js"></script>
+        <script src="script/V/EditForm.js"></script>
+		<script src="script/V/TeamFinish.js"></script>
+        <script src="script/M/Race.js"></script>
+        <script src="script/M/Team.js"></script>
+        <script src="script/V/RaceStart.js"></script>
+        <script src="script/V/MemberEdit.js"></script>
+        <script src="script/V/TeamBonusEdit.js"></script>
+        <script src="script/V/TeamEdit.js"></script>
+        <script src="script/V/TeamsList.js"></script>
+        <script src="script/V/BonusEdit.js"></script>
+        <script src="script/V/RaceEdit.js"></script>
+        <script src="script/V/RacesList.js"></script>
+        <script src="script/C/Teams.js"></script>
+        <script src="script/C/Races.js"></script>
+        <script src="script/C/UrbanDareCommand.js"></script>
+	</body>
+</html>

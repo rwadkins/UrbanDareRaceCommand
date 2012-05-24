@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <sdk-version>1.1.0</sdk-version>
+    <guid>607e9829-01a3-46f8-b4a5-cd950c0aba35</guid>
+    <!-- These values are edited/maintained by Titanium Developer -->
+    <id>com.rwadkins.urbandareracecommand</id>
+    <name>UrbanDareRaceCommand</name>
+    <version>0.1</version>
+    <publisher>Ray</publisher>
+    <url>http://</url>
+    <description>not specified</description>
+    <icon>icon.png</icon>
+    <copyright>2012 by Ray</copyright>
+    <!-- Window Definition - these values can be edited -->
+    <window>
+        <id>initial</id>
+        <title>DeskTest</title>
+        <url>app://index.html</url>
+        <width>800</width>
+        <max-width>3000</max-width>
+        <min-width>0</min-width>
+        <height>700</height>
+        <max-height>3000</max-height>
+        <min-height>0</min-height>
+        <fullscreen>false</fullscreen>
+        <resizable>true</resizable>
+        <chrome scrollbars="true">true</chrome>
+        <maximizable>true</maximizable>
+        <minimizable>true</minimizable>
+        <closeable>true</closeable>
+    </window>
+</ti:app>

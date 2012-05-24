@@ -1,0 +1,244 @@
+body {
+	background-color: #f3d424;
+	background-image: url("/images/header.jpg");
+	background-repeat: no-repeat;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-indent:0 
+}
+
+li {
+    padding-top:0px; 
+    padding-bottom:0px; 
+    text-indent:0 
+}
+
+#main_wrapper {
+	position: absolute;
+	top:175px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: -webkit-box;
+  	-webkit-box-orient: horizontal;
+	display: box;
+  	box-orient: horizontal;
+	padding: 5px;
+}
+
+.main_column {
+	-webkit-box-flex: 1;
+  	box-flex: 1;
+  	margin: 5px;
+/*    left: 0;*/
+/*    right: 0;*/
+}
+
+#main_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+}
+
+#main_right {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.left_list {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.list_title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    border-bottom: 1px #ccc solid;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: -5px;
+    padding-bottom: -5px;
+    font-weight: 900;
+}
+
+.list_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    border-top: 1px #ccc solid;
+}
+
+.ul_wrapper {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.left_list li {
+    position: relative;
+    border-bottom: 1px #ccc solid;
+    height: 50px;
+}
+
+.raceDate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.raceLocation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;    
+}
+
+.teamNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;        
+}
+
+.teamName {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;        
+}
+
+.rawTime {
+    font-size: 75%;
+}
+
+.bonuses {
+    font-size: 75%;
+}
+
+.teamTime {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;        
+}
+
+.teamPos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;        
+}
+
+#raceBonusList,
+#teamMemberList,
+#teamBonusList,
+#teamRaceBonusList {
+    margin-left: 125px;
+}
+
+.subList {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #FCE6C9;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.subList span {
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.subList a {
+    display: inline-block;
+    font-size: 75%;
+    line-height: 75%;
+    padding: 3px;
+    background-color: #FFFFFF;
+    color: #FF0000;
+    margin-bottom: 5px;
+}
+
+.editField label {
+    display: inline-block;
+    width: 125px;
+    text-align: right;
+}
+
+.editButtons {
+	text-align: right;
+}
+
+.button {
+	display: inline-block;
+	margin-left: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #795636;
+	background-image: -webkit-linear-gradient(bottom, rgb(121,86,54) 7%, rgb(118,95,64) 54%, rgb(195,183,141) 77%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.07, rgb(121,86,54)),
+		color-stop(0.54, rgb(118,95,64)),
+		color-stop(0.77, rgb(195,183,141))
+	);
+	color: #fff;
+	font-weight: bold;
+}
+
+.button,
+.subList {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    user-select: none;
+}
+
+.droppedbox {
+    height: auto;
+    opacity: 1;
+	background-color: #FFF;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 3px 3px 5px #888;
+	padding: 5px;
+	margin-bottom: 5px;
+	overflow: hidden;
+	-webkit-transition-property: opacity, height;
+	-webkit-transition-duration: 0.3s, 0.3s;
+	-webkit-transition-timing-function: linear, linear;
+/*	-webkit-transition: opacity 0.3s ease-in;
+	-webkit-transition: top 0.3s ease-in;
+    -webkit-transition: height 0.3s ease-in;*/}
+
+.hidden {
+	/* display: none; */
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
